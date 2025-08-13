@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="label">
+        <input class="movie-name" type="text" placeholder="Movie Name" />
+        <button class="search">Search</button>
+      </div>
+      <div class="movies-list"></div>
+    </header>
+    <main>
+      <div class="poster">
+        <img src="https://placeholdit.com/300x450/515151/999999" alt="" />
+      </div>
+      <div class="details">
+        <h1 class="title">
+          <span class="text">Movie Name</span>
+          <span class="year">(Year)</span>
+        </h1>
+        <div class="movie-info">
+          <div class="general-info">
+            <p>General:</p>
+            <span class="type">Type</span>
+            <span class="seasons"></span>
+            <span class="lang">Lang</span>
+          </div>
+          <div class="genres-info">
+            <p>Genre:</p>
+            <ul class="genres"></ul>
+          </div>
+          <div class="rating-info">
+            <p>Ratings:</p>
+            <span>
+              <span class="imdb">0/0</span>
+              <span class="votes">(0) reviewer</span>
+            </span>
+            <span class="rated">rated</span>
+            <span class="run-time">duration</span>
+          </div>
+        </div>
+        <p class="description">Test Description</p>
+        <div class="cast">
+          <div>
+            <h3>Director:</h3>
+            <p class="director">Name</p>
+          </div>
+          <div>
+            <h3>Writers:</h3>
+            <p class="writer">Name</p>
+          </div>
+          <div>
+            <h3>Actors:</h3>
+            <p class="actor">Name</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
