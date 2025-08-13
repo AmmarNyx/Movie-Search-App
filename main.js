@@ -19,7 +19,8 @@ function movieSearch() {
   });
 }
 async function getData(movieName) {
-  const movieUrl = `http://www.omdbapi.com/?apikey=${key}&s=${movieName}`;
+  const protocol = window.location.protocol === "https:" ? "https:" : "http:";
+  const movieUrl = `${protocol}//www.omdbapi.com/?apikey=${key}&s=${movieName}`;
 
   try {
     const movieResponse = await fetch(movieUrl);
@@ -89,7 +90,8 @@ moviesList.addEventListener("click", (e) => {
   }
 });
 async function getDetailsData(id, type) {
-  const movieUrl = `http://www.omdbapi.com/?apikey=${key}&i=${id}&type=${type}`;
+  const protocol = window.location.protocol === "https:" ? "https:" : "http:";
+  const movieUrl = `${protocol}//www.omdbapi.com/?apikey=${key}&i=${id}&type=${type}`;
 
   try {
     const movieResponse = await fetch(movieUrl);
